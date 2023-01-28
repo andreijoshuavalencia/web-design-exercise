@@ -158,10 +158,6 @@ header {
     border-radius: 18px;
 }
 
-.button-container .button.get-started {
-    margin-right: 60px;
-}
-
 .get-started {
     background-color: #BEE1E6;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
@@ -323,10 +319,14 @@ header {
 
 .more-links {
     margin: 90px auto;
-    width: 1200px;
+    width: 1440px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+.more-links img {
+    align-self:flex-start;
 }
 
 .more-links div {
@@ -335,6 +335,10 @@ header {
     flex-flow: column wrap;
     width: 25%;
     margin-left: 60px;
+}
+
+.more-links ul {
+    
 }
 
 .more-links li {
@@ -348,9 +352,13 @@ header {
 
 .more-links h3, .more-links h4 {
     font-weight: 600;
-    /* font-size: 18px; */
-    /* line-height: 21px; */
+    font-size: 18px;
+    line-height: 21px;
     text-transform: uppercase;
+}
+
+.more-links li {
+    cursor: pointer;
 }
 
 /* Footer */
