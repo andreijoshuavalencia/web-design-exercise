@@ -13,10 +13,6 @@ li {
     list-style-type: none;
 }
 
-header, footer {
-    max-width: 100%;
-}
-
 a {
     text-decoration: none;
     color: #000;
@@ -55,7 +51,6 @@ header {
     width: 188px;
     height: 36px;
     border-radius: 16px;
-    font-weight: 500;
     font-size: 14px;
     line-height: 16px;
 }
@@ -80,6 +75,7 @@ header {
 .hero-content{
     width: 1200px;
     display: flex;
+    flex-direction: column;
     position: relative;
     padding: 0 30px;
 }
@@ -89,6 +85,10 @@ header {
     display: flex;
     flex-flow: column wrap;
     justify-content: space-around;
+}
+
+.hero-content_text p {
+    margin-bottom: 30px;
 }
 
 .hero-content_text h1 {
@@ -183,7 +183,6 @@ header {
 }
 
 /* Ideas Section */
-
 .ideas {
     width: 1200px;
     margin: 90px auto;
@@ -213,6 +212,8 @@ header {
 
 .ideas-testimonial {
     display: flex;
+    vertical-align: middle;
+    margin: 20px 0;
 }
 
 .ideas-testimonial p {
@@ -221,15 +222,14 @@ header {
     font-size: 14px;
     line-height: 24px;
     text-align: justify;
-    letter-spacing: 0.025em;
 }
+
 
 .ideas-description {
     font-style: normal;
     font-weight: 300;
     font-size: 16px;
     line-height: 150.19%;
-    /* or 24px */
     text-align: justify;
 }
 
@@ -288,7 +288,6 @@ header {
     width: 600px;
 }
 
-
 .hero2-testimonials {
     display: flex;
 }
@@ -296,23 +295,22 @@ header {
 .hero2-testimonials p {
     width: 250px;
 }
-/* 
-.ideas-image {
-    position: relative;
-} */
+
 
 .hero2-image img {
+    align-self: center;
+    filter: drop-shadow(0px 4px 9px rgba(0, 0, 0, 0.25));
     border-radius: 50px;
 }
 
 .hero2-image1 {
     position: relative;
-    left: 150px;
+    left: 60px;
 }
 
 .hero2-image2 {
     position: relative;
-    left: 80px;
+    left: 0px;
     top: 50px;
 }
 
